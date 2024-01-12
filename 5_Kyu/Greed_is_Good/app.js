@@ -3,4 +3,18 @@ function score(dice) {
     let score = 0;
     dice.join("").split("").forEach(element => 
         arr[element] = (arr[element] || 0) + 1);
+    
+    for(let i = 0; i <= 6; i++) {
+        if(arr[i] != undefined) {
+            switch (i) {
+                case 1:
+                    if(arr[i] >= 3) {
+                        result += 1000;
+                        if((arr[i] - 3) > 0) score += (arr[i] - 3) * 100;
+                    } else {
+                        result += arr[i] * 100;
+                    }
+            }
+        }
+    }
 }    
