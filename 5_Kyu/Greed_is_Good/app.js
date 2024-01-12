@@ -25,6 +25,11 @@ function score(dice) {
                     if(arr[i] >= 3) result += 300;
 
                     break;
+
+                case 4:
+                    if(arr[i] >= 3) result += 400;
+
+                    break;
             }
         }
     }
