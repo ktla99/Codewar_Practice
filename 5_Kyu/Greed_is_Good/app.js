@@ -9,11 +9,17 @@ function score(dice) {
             switch (i) {
                 case 1:
                     if(arr[i] >= 3) {
-                        result += 1000;
-                        if((arr[i] - 3) > 0) score += (arr[i] - 3) * 100;
+                        score += 1000;
+                        if((arr[i] - 3) > 0) score += (arr[i] - 3)
+                         * 100;
                     } else {
-                        result += arr[i] * 100;
+                        score += arr[i] * 100;
                     }
+                    break;
+                case 2:
+                    if(arr[i] >= 3) result += 200;
+                    break;
+
             }
         }
     }
