@@ -18,8 +18,13 @@ function score(dice) {
                     break;
                 case 2:
                     if(arr[i] >= 3) result += 200;
+
                     break;
 
+                case 3:
+                    if(arr[i] >= 3) result += 300;
+
+                    break;
             }
         }
     }
