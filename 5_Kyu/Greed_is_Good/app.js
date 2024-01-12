@@ -30,7 +30,16 @@ function score(dice) {
                     if(arr[i] >= 3) result += 400;
 
                     break;
+                    
+                case 5:
+                    if(arr[i] >= 3) result += 500;
+
+                    if((arr[i] - 3) > 0) result += (arr[i] - 3) * 50; 
+                } else {
+                    score += arr[i] * 50;
             }
+
+            break;
         }
     }
 }    
