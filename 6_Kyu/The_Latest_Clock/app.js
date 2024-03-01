@@ -1,5 +1,7 @@
 function latestClock(a, b, c, d) {
     let numbers = [a, b, c, d];
+    // Create a constant which is function that takes in a num
+    // wwithin an arr(ray)
     const removeNumbers = function(num, arr) {
         let removal = arr.slice();
         const index = arr.indexOf(num);
@@ -10,10 +12,10 @@ function latestClock(a, b, c, d) {
     const valueOneMax = ((arr) => {
         const biggerThanFive = arr.filter(n => n > 5);
         return biggerThanFive.length === 2 ? 1 : 2;
-    })(digits);
+    })(numbers);
 
     const valueOne = Math.max(...numbers.filter(number => number <= valueOneMax));
-    numbers = removeNumbers(valueOne, digits);
+    numbers = removeNumbers(valueOne, numbers);
 
     const valueTwoMax = valueOne === 2 ? 3 : 9;
     const valueTwo = Math.max(...numbers.filter(number => number <= valueTwoMax));
