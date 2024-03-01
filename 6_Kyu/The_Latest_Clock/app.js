@@ -2,6 +2,9 @@ function latestClock(a, b, c, d) {
     let numbers = [a, b, c, d];
     const removeNumbers = function(num, arr) {
         let removal = arr.slice();
+        const index = arr.indexOf(num);
+        removal.splice(index, 1);
+        return removal;
     }
 }
 
