@@ -6,6 +6,27 @@ function latestClock(a, b, c, d) {
         removal.splice(index, 1);
         return removal;
     }
+
+    const valueOneMax = ((arr) => {
+        const biggerThanFive = arr.filter(n => n > 5);
+        return biggerThanFive.length === 2 ? 1 : 2;
+    })(digits);
+
+    const valueOne = Math.max(...numbers.filter(number => number <= valueOneMax));
+    numbers = removeNumbers(valueOne, digits);
+
+    const valueTwoMax = valueOne === 2 ? 3 : 9;
+    const valueTwo = Math.max(...numbers.filter(number => number <= valueTwoMax));
+    numbers = removeNumbers(valueTwo, numbers);
+
+    const valueThreeMax = 5;
+    const valueThree = Math.max(...numbers.filter(number => number <= valueThreeMax));
+    numbers = removeNumbers(valueThree, numbers);
+
+    const valueFour = numbers[0];
+    
+    return `${valueOne}${valueTwo}:${valueThree}${valueFour}`
+
 }
 
 
