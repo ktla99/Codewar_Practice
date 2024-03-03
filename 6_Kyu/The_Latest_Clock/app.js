@@ -15,6 +15,7 @@ function latestClock(a, b, c, d) {
         return biggerThanFive.length === 2 ? 1 : 2;
     })(numbers);
 
+    // Create constants which finds the max value of a number within the numbers array that is less than or equal to valueOneMax
     const valueOne = Math.max(...numbers.filter(number => number <= valueOneMax));
     numbers = removeNumbers(valueOne, numbers);
 
