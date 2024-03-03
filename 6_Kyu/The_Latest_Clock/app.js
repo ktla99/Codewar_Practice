@@ -9,6 +9,7 @@ function latestClock(a, b, c, d) {
         return removal;
     }
 
+    // The max possible time is 23:59 [valueOne][valueTwo]:[valueThree][valueFour]
     const valueOneMax = ((arr) => {
         const biggerThanFive = arr.filter(n => n > 5);
         return biggerThanFive.length === 2 ? 1 : 2;
