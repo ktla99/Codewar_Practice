@@ -8,3 +8,4 @@ function gimmeTheLetters(sp) {
     }
     return result;
 }
+
