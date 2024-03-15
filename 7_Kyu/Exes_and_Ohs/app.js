@@ -12,3 +12,5 @@ function XO(str) {
     }
     return countOne === countTwo
 }
+
+// Calculate if all the X's matches the numbers of O's
