@@ -7,6 +7,6 @@ function findShort(s){
       arr.push(countString)
     }
     let sortArr = arr.sort((a, b) => a - b)
-    console.log(sortArr)
+    // console.log(sortArr)
     return sortArr[0]
   }
