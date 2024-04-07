@@ -1,5 +1,4 @@
 function hexColor(codes){
-    console.log(codes)
     const coArr = codes.split(" ");
   
     if(Number(coArr[0]) > Number(coArr[1]) && Number(coArr[0]) > Number(coArr[2])) {
