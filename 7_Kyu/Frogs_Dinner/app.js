@@ -8,7 +8,7 @@ function frogContest(n) {
 }
 
 
-/* 
+/* this function is too repetitive and long
 function frogContest(n) {
   let chris = [];
   let tom = [];
